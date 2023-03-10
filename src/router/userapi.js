@@ -23,6 +23,8 @@ userRouter.route('/userunblock').get(authVerify, userController.userunBlock)
 userRouter.route('/hendleRefresh').get(authVerify, userController.hendleRefreshToken)
 
 
-
+userRouter.get('/', (req, res) =>{
+    res.send("Hello Megshop")
+})
 
 module.exports = userRouter
